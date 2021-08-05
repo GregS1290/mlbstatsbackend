@@ -2,7 +2,7 @@ const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 
-const MLBAPI = require('./datasources/track-api');
+const MLBAPI = require('./datasources/mlb-api');
 
 const server = new ApolloServer({
   typeDefs,
